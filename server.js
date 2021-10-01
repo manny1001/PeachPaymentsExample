@@ -15,14 +15,7 @@ app.get("/checkout", function (req, res) {
     'paymentType': 'DB'
   });
 
-
-  const token = jwt.sign(
-    { user_id: user._id, email },
-    process.env.TOKEN_KEY,
-    {
-      expiresIn: "2h",
-    }
-  );
+ 
   const options = {
     port: 443,
     host: 'test.oppwa.com',
