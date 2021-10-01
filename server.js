@@ -56,4 +56,4 @@ app.get("/checkout", function (req, res) {
 
 console.log("App has started")
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
